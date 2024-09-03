@@ -1,0 +1,30 @@
+{
+  "name": "@demo/billing-app-application",
+  "version": "1.0.0",
+  "description": "Application for the frontend billing section",
+  "private": true,
+  "main": "./index.ts",
+  "module": "./dist/esm/index.js",
+  "exports": {
+    ".": {
+      "browser": "./index.ts",
+      "import": "./dist/esm/index.js",
+      "require": "./dist/cjs/index.js",
+      "types": "./index.ts",
+      "default": "./index.ts"
+    }
+  },
+  "sideEffects": false,
+  "dependencies": {
+    "@demo/billing-app-data-access": "workspace:*",
+    "@demo/billing-app-domain": "workspace:*",
+    "@demo/billing-shared-domain": "workspace:*",
+    "@demo/logger": "workspace:*",
+    "@demo/shared-app-util-hooks": "workspace:*",
+    "@demo/shared-app-util-routing": "workspace:*",
+    "@demo/shared-app-util-state-management": "workspace:*",
+    "@demo/util-cross-platform-kernel": "workspace:*",
+    "@stripe/connect-js": "3.3.6",
+    "react": "*"
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "name": "@demo/billing-app-feature",
+  "version": "1.0.0",
+  "description": "Feature for frontend billing swimlane",
+  "private": true,
+  "main": "./index.ts",
+  "module": "./dist/esm/index.js",
+  "exports": {
+    ".": {
+      "browser": "./index.ts",
+      "import": "./dist/esm/index.js",
+      "require": "./dist/cjs/index.js",
+      "types": "./index.ts",
+      "default": "./index.ts"
+    }
+  },
+  "sideEffects": false,
+  "dependencies": {
+    "@demo/admin-shared-domain": "workspace:*",
+    "@demo/billing-app-application": "workspace:*",
+    "@demo/billing-app-domain": "workspace:*",
+    "@demo/billing-app-ui": "workspace:*",
+    "@demo/billing-app-ui-assets": "workspace:*",
+    "@demo/billing-shared-domain": "workspace:*",
+    "@demo/collection-utils": "workspace:*",
+    "@demo/logger": "workspace:*",
+    "@demo/protocol": "workspace:*",
+    "@demo/shared-app-util-date": "workspace:*",
+    "@demo/shared-app-util-form": "workspace:*",
+    "@demo/shared-app-util-hooks": "workspace:*",
+    "@demo/shared-app-util-routing": "workspace:*",
+    "@demo/shared-util-routing": "workspace:*",
+    "@demo/ui-design-system": "workspace:*",
+    "@demo/ui-design-system-assets": "workspace:*",
+    "@stripe/react-stripe-js": "^2.4.0",
+    "@stripe/stripe-js": "^2.2.0",
+    "react": "*",
+    "styled-components": "*"
+  }
+}

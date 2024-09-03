@@ -1,0 +1,23 @@
+{
+  "name": "@demo/billing-app-data-access",
+  "version": "1.0.0",
+  "description": "Data access for the billing section for the frontend application",
+  "private": true,
+  "main": "./index.ts",
+  "module": "./dist/esm/index.js",
+  "exports": {
+    ".": {
+      "browser": "./index.ts",
+      "import": "./dist/esm/index.js",
+      "require": "./dist/cjs/index.js",
+      "types": "./index.ts",
+      "default": "./index.ts"
+    }
+  },
+  "sideEffects": false,
+  "dependencies": {
+    "@demo/app-api-client": "workspace:*",
+    "@demo/billing-app-domain": "workspace:*",
+    "@demo/protocol": "workspace:*"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "name": "@demo/billing-app-ui",
+  "version": "1.0.0",
+  "description": "UI for frontend billing swimlane",
+  "private": true,
+  "main": "./index.ts",
+  "module": "./dist/esm/index.js",
+  "exports": {
+    ".": {
+      "browser": "./index.ts",
+      "import": "./dist/esm/index.js",
+      "require": "./dist/cjs/index.js",
+      "types": "./index.ts",
+      "default": "./index.ts"
+    }
+  },
+  "sideEffects": false,
+  "devDependencies": {
+    "@demo/protocol": "workspace:*",
+    "@demo/shared-app-util-testing": "workspace:*"
+  },
+  "dependencies": {
+    "@demo/admin-shared-domain": "workspace:*",
+    "@demo/billing-app-domain": "workspace:*",
+    "@demo/billing-app-ui-assets": "workspace:*",
+    "@demo/billing-shared-domain": "workspace:*",
+    "@demo/shared-app-ui-theme": "workspace:*",
+    "@demo/shared-app-util-routing": "workspace:*",
+    "@demo/shared-util-string-modification": "workspace:*",
+    "@demo/ui-design-system": "workspace:*",
+    "@demo/ui-design-system-assets": "workspace:*",
+    "@stripe/react-connect-js": "^3.3.8",
+    "react": "*",
+    "styled-components": "*"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "name": "@demo/billing-shared-domain",
+  "version": "1.0.0",
+  "description": "Shared domain logic for the billing swimlane",
+  "private": true,
+  "main": "./index.ts",
+  "module": "./dist/esm/index.js",
+  "exports": {
+    ".": {
+      "browser": "./index.ts",
+      "import": "./dist/esm/index.js",
+      "require": "./dist/cjs/index.js",
+      "types": "./index.ts",
+      "default": "./index.ts"
+    }
+  },
+  "sideEffects": false
+}

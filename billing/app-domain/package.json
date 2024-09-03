@@ -1,0 +1,21 @@
+{
+  "name": "@demo/billing-app-domain",
+  "version": "1.0.0",
+  "description": "Domain for the frontend billing section",
+  "private": true,
+  "main": "./index.ts",
+  "module": "./dist/esm/index.js",
+  "exports": {
+    ".": {
+      "browser": "./index.ts",
+      "import": "./dist/esm/index.js",
+      "require": "./dist/cjs/index.js",
+      "types": "./index.ts",
+      "default": "./index.ts"
+    }
+  },
+  "sideEffects": false,
+  "dependencies": {
+    "getenv": "1.0.0"
+  }
+}
